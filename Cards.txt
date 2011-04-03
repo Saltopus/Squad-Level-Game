@@ -1,0 +1,80 @@
+[numCards] = 43
+CARDS= [numCards]
+BORDER=ROUNDED, #0000, 0.03
+PAGE=21,29.7,LANDSCAPE
+DPI=300
+CARDSIZE=6.35,8.8
+MARGINS=1,1,1,1
+GAP=0.3,0.3
+
+[terrainCards] = 1-[numCards]
+[borderColor] = #dddddd
+rectangle = [terrainCards], 0,0,10,10, #a09000
+font=arial,12,"T",[borderColor]
+IMAGE = [terrainCards], "jungle.png",0,0,6.35,8.8,90,"TX",100,6,6
+text = [terrainCards], "#{§}", 5.8,7.2,0.5,0.9,"LEFT","CENTER",90
+
+FIELDBORDERS = 2-[numCards]
+
+
+font=arial,24,"T",[borderColor]
+
+{[CARDNAME] =  "Base Camp|Helicopter|
+River W->E|River W->NE|River SW->N|River S->E|River W->N|
+Road W->E|Road W->NE|Road SW->N|Road S->E|Road W->N|
+Rice Field I|Rice Field II|Rice Field III|Rice Field IV|
+Village I|Village II|Army Camp|Deserted Camp|
+Clearing I|Clearing II|Hill I|Hill II|
+Jungle I |Jungle II |Jungle III |Jungle IV |Jungle V |
+Jungle VI |Jungle VII |Jungle VIII |Jungle IX |Jungle X|
+Jungle XI |Jungle XII |Jungle XIII |Jungle XIV |Jungle XV |
+Ruins I| RUINS II| Burned Village I| Burned Village II
+"}
+BETATEXT= [terrainCards], [CARDNAME]
+
+[West] = 3.1525, 0
+[East] = 3.1525, 8.8
+[Centrum] = 3.1525, 4.4
+[NorthEast] = 6.35, 8.8
+[SouthWest] = 0,0
+[South] = 0, 4.4
+[North] = 6.35, 4.4
+[RiverColor] =  #0000CC,0.5
+LINE = 3, [West], [East],[RiverColor]
+LINE = 4, [West], [Centrum],[RiverColor]
+LINE = 4, [Centrum], [NorthEast],[RiverColor]
+LINE = 5, [SouthWest], [Centrum],[RiverColor]
+LINE = 5, [Centrum], [North],[RiverColor]
+LINE = 6, [South], [Centrum],[RiverColor]
+LINE = 6, [Centrum], [East],[RiverColor]
+LINE = 7, [West], [Centrum],[RiverColor]
+LINE = 7, [Centrum], [North],[RiverColor]
+
+[RoadColor] =  #703000,0.5
+LINE = 8, [West], [East],[RoadColor]
+LINE = 9, [West], [Centrum],[RoadColor]
+LINE = 9, [Centrum], [NorthEast],[RoadColor]
+LINE = 10, [SouthWest], [Centrum],[RoadColor]
+LINE = 10, [Centrum], [North],[RoadColor]
+LINE = 11, [South], [Centrum],[RoadColor]
+LINE = 11, [Centrum], [East],[RoadColor]
+LINE = 12, [West], [Centrum],[RoadColor]
+LINE = 12, [Centrum], [North],[RoadColor]
+
+
+MACRO = FIELDBORDERS, (cardsnumbers)
+[lineThickness] = 0.03
+[style] = "DSS"
+line = (cardsnumbers), 1.5,1.5,1.5,7.3, [borderColor],[lineThickness], [style]
+line = (cardsnumbers), 1.5,1.5,4.85,1.5, [borderColor],[lineThickness], [style]
+line = (cardsnumbers), 4.85,1.5,4.85,7.3, [borderColor],[lineThickness], [style]
+line = (cardsnumbers), 1.5,7.3,4.85,7.3, [borderColor],[lineThickness], [style]
+line = (cardsnumbers), 0,0,1.5,1.5, [borderColor],[lineThickness], [style]
+Line = (cardsnumbers), 6.35,0,4.85,1.5, [borderColor],[lineThickness], [style]
+Line = (cardsnumbers), 0,8.8,1.5,7.3, [borderColor],[lineThickness], [style]
+Line = (cardsnumbers), 6.35,8.8,4.85,7.3, [borderColor],[lineThickness], [style]
+end
+
+MACRO = BETATEXT, (card), (name)
+ TEXT = (card), (name), 0,0,6.35,8.88, CENTER, CENTER, 90
+END

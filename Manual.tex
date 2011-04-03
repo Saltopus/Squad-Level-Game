@@ -1,0 +1,108 @@
+\documentclass[twocolumn,titlepage]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+ 
+\title{Squad Level Solo Game}
+\author{Florian Faust}
+\date{\today}
+\begin{document}
+ 
+\maketitle
+\section*{Introduction}
+A second try to create a solo game. The first one inspired by the anime series Area 88 never reached a further state.
+\setcounter{tocdepth}{2}
+\tableofcontents
+\newpage
+\section{Game components}
+
+\subsection{Cards}
+\subsubsection{Map}
+\subsubsection{Squad members}
+\subsubsection{Weapons}
+\subsection{Counters}
+\subsubsection{Enemies}
+squads, leaders, traps, 
+\subsubsection{Scenery}
+Bridge, pillbox, hut, helicopter, tunnel
+\subsubsection{Equipment}
+Grenades, ammunition, radio, special weapons, first aid kit
+\subsubsection{Special counters}
+Wounds, reload, ambush, cover, artillery/napalm strike, rescued person, civilian
+\subsection{Dice}
+This game requires some dice at best in three different colours. Each colour represents a different strength of attack white: light weapons (pistols, rifles), yellow: medium weapons (machine guns, grenades), red: heavy weapons (explosives, rockets). About 9 white, 3 yellow and 3 red dice should be enough to fight through the jungle without problems. Optionally the colours can be ignored and the dice are rolled in three seperated rolls.
+\section{Starting the game}
+\subsection{Selecting the squad}
+\subsection{Setting up}
+place the squad marker at the designated starting position and you are ready to roll.
+\subsection{Go}
+Place the squad marker on the designated starting card and you are ready.
+\section{Sequence of play}
+Sequence of a game turn
+\subsection{Movement}
+Move your squad around the map. Moves are always one step across one border or one edge.
+\subsection{Exploration}
+When entering an unexplored card, place counters on it
+\subsection{Encounters}
+When entering an field containeng counters or adjacend to a field containing counters start the encounter phase
+\subsection{Fire fights}
+Having an enemy ancounter, most of the time a fire fight results
+\section{Movement}
+Moving around the map is easy
+\subsection{Crossing a border}
+\subsection{Crossing an edge}
+\section{Exploration}
+Entering a new card reveals alll enemies and encounters
+\subsection{Revealing a new card}
+\subsection{Reading the Encounter tables}
+The scenario description includes tables dipplaying the counter distribution for each type of terrain card.
+\subsection{Setting up a new encounter}
+place all counters according to the encounter table
+\section{Encounters}
+When entering a field with atleast one counter an encounter occurs. If enemy counters are present check for engagement, otherwise 
+\section{Fire fights}
+\subsection{Attacking}
+Throw dice according to used weapons. Count hits according to firing squad members. Each hit removes one hit box of same or lower colour. No hitbox remaining: flip counter. If already flipped or no reverse side: remove counter. A counter flipped by this attack can not be removed until all other counters are assigned enough damage to either flip or remove them. Each number can only be used once. {\bf Important:} Rolled numbers do not have to be assigned to the squad member which fired the weapon but can be assigned to any member.
+\subsubsection{Selecting weapons}
+Out of a fire fight the active weapon of a squad member can be changed at any time. During a fight a reequipment special order has to be used.
+\subsubsection{Special attacks}
+There are two kinds of special attacks: reload attacks and use-once attacks. Both attacks are executed by removing a counter from either the weapon or the squad member. A reload attack depends on the weapon used to execute it. All information can be found on the weapon card. The properties of a use-once attack are displayed on {\bf TODO: the counter or its backside}
+\subsection{Enemy fire}
+Add together all remaining fire power. This is the attack strength. Select one squad member. Substract the cover value from the attack strength. Roll one die and substract the result from the attack strength. If the remaining attack strength is larger than zero, the squad member is wounded and gets one wound token. Other wise the attack is finished. Continue this until the attack strength reaches zero.
+\subsubsection{Cover}
+When having additional cover, attack removes one cover marker from the targeted squad member
+\subsection{Ambush}
+Normally the player has the first attack. If the encounter reveals an ambush counter, this is immediatly replaced by a new draw and the squad is ambushed. Resolve an immediate enemy attack. No orders can be executed beforehand. A trap always includes an abush.
+\subsection{Wounds}
+Each wound removes one hit number from right to left. Last hit number is not removed.
+\subsubsection{Dying}
+If a squad member received a wound and has now three or more wound counters, he is fatally wounded and will die if not treated immediatly. To rescue him another squad member must execute <first aid> actions until the fire fight is finished. If the first aid cannot be delivered, the squad member dies and is removed from play. Its weapons and weapon counters can be distributed to the remaining squad after the fight finished or by using a reequipment special order.
+\subsection{Special orders}
+\subsubsection{Taking Cover}
+Distribute a number of cover counters up to the squad member's leadership value between all squad members. Each member can receive atmost one cover counter by this order. 
+\subsubsection{Reloading}
+Move one reload counter form the squad member card to the weapon card. If the squad member does not have any reload counters, the action cannot be successfully executed.
+\subsubsection{First aid}
+Turn one wound marker of a squad member to the ignored side. Keep one fatally wounded squad member alive.
+\subsubsection{Reequip}
+Rotate the weapons card of the squad member by 180 degrees. Exchange the weapons card of a squadmember with the one of a fallen member. Transfer reload counters to another member.
+\subsubsection{Coordinated action}
+Generate a number of reroll tokens  equal to the squad member's leadership value.
+\subsection{Cleaning up}
+If atleast one squad member survived, the game goes on. Turn all wound markers to their ignored side. Fatally wounded members which survived turn over all but their number of wounds minus two. Every weapon with reload effects is reloaded.
+\section{Squads}
+\subsection{Stats}
+\subsection{Equipment}
+\section{Weapons}
+\subsection{Stats}
+\subsection{Reload abilities}
+\subsection{Use-once weapons}
+\section{Missions}
+\subsection{First Assignment}
+\subsection{SNIPER!!}
+\subsection{Returning To Camp}
+\section{Encounter tables}
+\section{Campaign}
+\section{Multiplayer}
+\end{document}
